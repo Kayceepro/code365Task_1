@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 2023 Frontend Developer Crash course</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Remember<span>That</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="open navigation">
+
+            <nav>
+                <img src="images/exit.svg" alt="close navigation" id="mobile-exit" class="mobile-menu-exit">
+
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li class=""><a href="#">Features</a></li>
+                    <li class=""><a href="#">Pricing</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact</a></li>
+                    <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">It's Nitty &amp; Gritty</p>
+                <h1>A Task App That Doesn't Stink</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try for Free</a>
+                    <a href="#" class="watch-video-cta"><img src="images/watch.svg" alt="">Watch a Video</a>
+                </div>
+            </div>
+            <img src="images/illustration.svg" class="hero-image" alt="Illustration">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Unlimited Task</li>
+                <li>SMS Talk Reminders</li>
+                <li>Confetti Explosions upon Task Completions</li>
+                <li>Social Media Announcements</li>
+                <li>Real Time Collaboration</li>
+                <li>Other Awesome Features</li>
+            </ul>
+            <img src="images/holding-phone.jpg" alt="Man Holding Phone">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person2.jpg" alt="person">
+                    <blockquote>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae architecto culpa id similique
+                        corporis, quas vero incidunt nemo officia. Autem ad placeat odit. Voluptas temporibus, sequi
+                        magni in debitis non.
+                    </blockquote>
+                    <cite> - Kayceepro</cite>
+                </li>
+                <li>
+                    <img src="images/person2.jpg" alt="person">
+                    <blockquote>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae architecto culpa id similique
+                        corporis, quas vero incidunt nemo officia. Autem ad placeat odit. Voluptas temporibus, sequi
+                        magni in debitis non.
+                    </blockquote>
+                    <cite> - Kayceepro</cite>
+                </li>
+                <li>
+                    <img src="images/person2.jpg" alt="person">
+                    <blockquote>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae architecto culpa id similique
+                        corporis, quas vero incidunt nemo officia. Autem ad placeat odit. Voluptas temporibus, sequi
+                        magni in debitis non.
+                    </blockquote>
+                    <cite> - Kayceepro</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-left">
+            <h2>Conttact</h2>
+
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <input type="submit" class="send-message-cta" class="send-message">
+            </form>
+        </div>
+        <div class="contact-right">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.2314125590638!2d7.4042755793457!3d6.862846900000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1044e877c29e89cf%3A0x6fec9e09bd37bf88!2sUniversity%20Of%20Nigeria%20Nsukka%20Bookshop!5e0!3m2!1sen!2sng!4v1686775606065!5m2!1sen!2sng"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn')
+        })
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn')
+        })
+    </script>
+
+</body>
+
+</html>
